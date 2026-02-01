@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #B3BA4F;
+  --secondary-color: #172B4D;
+  --accent1-color: #919A7F;
+  --accent2-color: #424F45;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: black;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+body {
+    background-color: wheat;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+.book, .join {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.book:hover, .join:hover {
+    background-color: black;
+    color: white;
+}
+
+#background {
+    background-color: var(--primary-color);
+}
+
+.msg {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+}
