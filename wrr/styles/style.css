@@ -31,11 +31,17 @@ main section {
 }
 
 body {
-    background-color: wheat;
+    background-color: white;
+    color: var(--accent2-color);
 }
 
 header {
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.home-grid h2 {
+    color: var(--accent1-color);
 }
 
 nav a:hover {
@@ -56,12 +62,41 @@ nav a:hover {
 
 #background {
     background-color: var(--primary-color);
+    height: 100px;
 }
 
 .msg {
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.msg h2 {
+    color: var(--secondary-color);
 }
 
 footer {
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: black;
+    color: white;
+}
+
+.logo, .icon {
+    width: 80px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
