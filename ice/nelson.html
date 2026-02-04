@@ -33,32 +33,52 @@
             background: #FFECD7;
         }
         #card {
+            margin: auto;
             background-color: #008DB1;
-            border-color: #004E63;
             justify-content: center;
-            
+            display: border;
+            border: #004E63, solid, 3px;
+            width: 60%;
+            border-radius: 5%;
+            padding: 30px;
+            white-space: nowrap;
+            font-size: clamp(1rem, 4vw);
         }
         main {
             text-align: center;
             justify-content: center;
             font-family: Helvetica;
+            width: 100%;
+            font-size: auto;
         }
         .name {
+            display: block;
             color: #FFFFFE;
+            margin-bottom: 10px;
         }
         .title {
             color: #91E4FB;
+            margin: 4px;
         }
         img {
-            margin: 15px 80px;
+            object-fit: contain;
+            width: 100%;
+            display: border;
+            border: #FFFFFE, solid, 4px;
+            margin-top: 15px;
         }
         .list {
             text-align: left;
+            margin-left: 28%;
+            margin-top: 10px;
+            margin-bottom: 5px;
             color: #FFFFFE;
+            line-height: 1.4;
         }
         .quote {
             font-family: 'Brush Script MT';
             color: #FFD783;
+            line-height: 1.8;
         }
     </style>
 </head>
@@ -70,10 +90,18 @@
     <main>
         <section id="card">
             <h1 class="name">Russel M. Nelson</h1>
-            <h3 class="title">17th President of the Church of Jesus Christ of Latter-day Saints</h3>
+            <h3 class="title">17th President of the Church of Jesus</h3>
+            <h3 class="title">Christ of Latter-day Saints</h3>
             <img src="images/russell_nelson.png" alt="">
-            <h2 class="list"></h2>
-            <h3 class="quote">"I urge you to devote time each week - for the rest of your life - to increase your understanding of the Atonement of Jesus Christ."</h3>
+            <ul class="list">
+                <li>Born: Sep. 9, 1924</li>
+                <li>Apostle: Apr 7, 1984</li>
+                <li>Prophet: Jan 14, 2018</li>
+            </ul>
+            <h3 class="quote">"I urge you to devote time each week —</h3>
+            <h3 class="quote">for the rest of your life — to increase</h3>
+            <h3 class="quote">your understanding of the Atonement of</h3>
+            <h3 class="quote">Jesus Christ."</h3>
         </section>
     </main>
 
