@@ -81,6 +81,52 @@ nav a {
     color: var(--accent1-color);
 }
 
+.gym-card {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.rapids-card {
+    grid-area: 2 / 5 / 3 / 7;
+}
+
+.spa-card {
+    grid-area: 2 / 8 / 3 / 10;
+}
+
+#background {
+    grid-area: 4 / 1 / 9 / 11;
+}
+
+.mountains {
+    width: 100%;
+    grid-area: 5 / 2 / 8 / 7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg {
+    grid-area: 6 / 6 / 7 / 10;
+    background-color: #6f7364;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.card-img {
+    width: 100%;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
 nav a:hover {
     background-color: black;
     color: white;
@@ -120,6 +166,11 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer p a:hover {
