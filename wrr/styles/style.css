@@ -26,6 +26,7 @@
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    background-image: radial-gradient(circle,  rgba(255, 255, 255, 1) 0%,  rgba(255, 255, 255, 0) 70%);
 }
 
 #hero-msg {
@@ -37,6 +38,14 @@
 #hero-image {
     width: 100%;
     overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    max-height: 1000px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-position: center center;
+    margin-bottom: 5em;
 }
 
 main section {
@@ -128,8 +137,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
 }
 
 body {
@@ -144,8 +153,8 @@ body {
 }
 
 .book:hover, .join:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
 }
 
 #background {
@@ -182,9 +191,21 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    background-color: black;
-    color: white;
+footer a img {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 10%;
+}
+
+.footerlink:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.social:hover {
+    transform: scale(1.1);
+    border-radius: 10%;
+    box-shadow: .5px .5px .5px .5px rgb(66, 66, 66);
 }
 
 .logo, .icon {
@@ -192,4 +213,48 @@ footer a:hover {
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
