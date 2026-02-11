@@ -14,6 +14,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-bottom: 50px;
     }
     tr, th, td {
       border: 1px solid black;
@@ -21,11 +22,19 @@
     }
     label, input {
       display: block;
-      width: 250px;
+      max-width: 200px;
+      text-align: left;
     }
     input {
       margin-bottom: .5em;
       padding: .25em, .5em;
+    }
+    h4 {
+      text-align: left;
+      text-decoration: underline;
+    }
+    .de {
+      width: 0;
     }
   </style>
 </head>
@@ -45,27 +54,38 @@
             <th>Title</th>
             <th>Location</th>
             <th>Year</th>
+            <th class="de">Delete Entry</th>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td>
+              <input type="submit" name="" id="">
+            </td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td>
+              <input type="submit" name="" id="">
+            </td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td>
+              <input type="submit" name="" id="">
+            </td>
           </tr>
          </table>
-         <form action="Table Entry">
+         <form action="">
+          <h4>Please input table data here</h4>
           <label for="speaker">Speaker</label>
           <input type="text" name="speaker" id="speaker">
           <label for="title">Title</label>
