@@ -51,10 +51,6 @@ main section {
     text-align: center;
 }
 
-#background {
-    height: 725px;
-}
-
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -103,6 +99,8 @@ nav a {
 
 #background {
     grid-area: 4 / 1 / 9 / 11;
+    height: 725px;
+    background-color: var(--primary-color);
 }
 
 .mountains {
@@ -156,11 +154,6 @@ body {
     color: var(--nav-hover-link-color);
 }
 
-#background {
-    background-color: var(--primary-color);
-    height: 100px;
-}
-
 .msg {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -179,6 +172,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: -1px;
 }
 
 footer p a:hover {
