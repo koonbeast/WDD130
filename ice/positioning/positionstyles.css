@@ -4,7 +4,7 @@
   /* This is the parent of the activity 1 boxes. */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 600px;
+  width: 600px;
   margin: 0 auto;
   justify-items: center;
   gap: 1em;
@@ -39,6 +39,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 600px;
   margin-right: 60%;
   margin-bottom: 40%;
 }
@@ -75,6 +76,7 @@
   /* This is the parent of the activity 3 boxes. */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 600px;
   justify-items: center;
   column-gap: 5em;
 }
@@ -107,6 +109,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  width: 600px;
 }
 .red4 {
   width: 100%; 
@@ -133,6 +136,7 @@
 .content5 {
   /* This is the parent of the activity 5 boxes. */
   height: 200px;
+  width: 800px;
 }
 .red5 { 
   width: 100%; 
@@ -140,11 +144,12 @@
   background-color: red; 
 } 
 .green5 { 
-  width: 200px; 
-  height: 200px; 
+  width: 14.8em; 
+  height: 14.8em;
   background-color: green; 
   z-index: 1;
   float: left;
+  margin-right: .2em;
 } 
 .yellow5 {
   width: 100%; 
@@ -165,6 +170,7 @@
   aspect-ratio: 1;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 600px;
 }
 .red6 {
   width: 100%; 
